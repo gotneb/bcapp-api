@@ -1,10 +1,7 @@
 # BCAPP
- A BCAPP's api library written using [Spark Web Framework](https://sparkjava.com/).
+ A BCAPP's api library written using [Spark Web Framework.](https://sparkjava.com/)
  
- :technologist: All code in mainly mainted by [Carlos Augusto](https://github.com/carlosamcruz/BCAPP).
- ## :milky_way: API
- 
- All of them return in a JSON format.
+ :stop_button: All of them return in a JSON format.
  
  ### :bookmark: ECC's endpoints
  
@@ -15,7 +12,7 @@ It has the same parameters meaning from Ecc.modp(BigInteger n, BigInteger p1). [
 #### HTTP Request
 
 ```
-GET https://bcapp-go.herokuapp.com/modp/<n>/<p1>
+GET https://bcapp-spark.herokuapp.com/modp/<n>/<p1>
 ```
  #### URL Parameters
 
@@ -35,7 +32,7 @@ It has the same parameters meaning from Ecc.inverse(BigInteger r, BigInteger p).
 #### HTTP Request
 
 ```
-GET https://bcapp-go.herokuapp.com/inverse/<r>/<p>
+GET https://bcapp-spark.herokuapp.com/inverse/<r>/<p>
 ```
  #### URL Parameters
 
@@ -55,7 +52,7 @@ It has the same parameters meaning from Ecc.doublep(BigInteger x, BigInteger y).
 #### HTTP Request
 
 ```
-GET https://bcapp-go.herokuapp.com/doublep/<x>/<y>
+GET https://bcapp-spark.herokuapp.com/doublep/<x>/<y>
 ```
  #### URL Parameters
 
@@ -75,7 +72,7 @@ It has the same parameters meaning from Ecc.addp(BigInteger x1, BigInteger y1, B
 #### HTTP Request
 
 ```
-GET https://bcapp-go.herokuapp.com/addp/<x1>/<y1>/<x2>/<y2>
+GET https://bcapp-spark.herokuapp.com/addp/<x1>/<y1>/<x2>/<y2>
 ```
  #### URL Parameters
 
@@ -97,7 +94,7 @@ It has the same parameters meaning from Ecc.eccnP(BigInteger n, BigInteger x, Bi
 #### HTTP Request
 
 ```
-GET https://bcapp-go.herokuapp.com/eccnp/<n>/<x>/<y>
+GET https://bcapp-spark.herokuapp.com/eccnp/<n>/<x>/<y>
 ```
  #### URL Parameters
 
