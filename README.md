@@ -1,7 +1,7 @@
 # BCAPP
  A BCAPP's api library written using [Spark Web Framework.](https://sparkjava.com/)
  
- :stop_button: All of them return in a JSON format.
+ :white_circle: All of them return in a JSON format.
  
  ### :bookmark: ECC's endpoints
  
@@ -107,3 +107,93 @@ GET https://bcapp-spark.herokuapp.com/eccnp/<n>/<x>/<y>
 </p>
 
 </details>
+
+### :bookmark: TonelliShanks's endpoints
+
+<details><summary>pow_mod</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/pow_mod/<base>/<expoent>/<modulus>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  base |  Big Integer |
+|  expoent |  Big Integer |
+|  modulus |  Big Integer |
+
+</p>
+
+</details>
+
+<details><summary>sqrtcf</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/sqrtcf/<n>/<p>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  n |  Big Integer |
+|  p |  Big Integer |
+
+</p>
+
+</details>
+
+### :bookmark: EcdsaSecretus' endpoints
+
+<details><summary>knum</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/knum/<HA4>/<PVTKEY>/<e>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  HA4 |  String |
+|  PVTKEY |  String |
+|  e |  String |
+
+</p>
+
+</details>
+
+<details><summary>ecdsabsv</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/ecdsabsv/<e>/<PVTKEY>/<HA4>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| e | String |
+| PVTKEY | String |
+| HA4 | String |
+
+</p>
+</details>
+
+- [ ] ECDSAVerify3 :warning:
+
+- [ ] ECDSAVerify :warning:
+
+## :memo: TODO
+ - [x] Ecc
+ - [x] TonelliShanks
+ - [x] EcdsaSecretus
+ - [ ] Keygen
+ - [ ] Ripemd160
+ - [ ] SHA256
