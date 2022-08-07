@@ -7,8 +7,10 @@ import com.google.gson.Gson;
 
 public class Api {
     private Gson gson;
+    // Endpoint classes
     private Ecc ecc;
     private TonelliShanks tonelliShanks;
+    private EcdsaSecretus ecdsaSecretus;
 
     public Gson getGson() { return gson; }
     public void setGson(Gson gson) { this.gson = gson; }
@@ -21,11 +23,17 @@ public class Api {
         this.tonelliShanks = tonelliShanks;
     }
 
+    public EcdsaSecretus getEcdsaSecretus() {return ecdsaSecretus;}
+    public void setEcdsaSecretus(EcdsaSecretus ecdsaSecretus) {
+        this.ecdsaSecretus = ecdsaSecretus;
+    }
+
     public Api() {
         gson = new Gson();
 
         setEcc(new Ecc(this));
         setTonelliShanks(new TonelliShanks(this));
+        setEcdsaSecretus(new EcdsaSecretus(this));
     }
 
     public void listen() {
@@ -34,6 +42,7 @@ public class Api {
 
         getEcc().start();
         getTonelliShanks().start();
+        getEcdsaSecretus().start();
     }
 
     // It's needed by Heroku
