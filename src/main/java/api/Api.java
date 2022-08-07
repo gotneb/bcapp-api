@@ -8,6 +8,7 @@ import com.google.gson.Gson;
 public class Api {
     private Gson gson;
     private Ecc ecc;
+    private TonelliShanks tonelliShanks;
 
     public Gson getGson() { return gson; }
     public void setGson(Gson gson) { this.gson = gson; }
@@ -15,16 +16,24 @@ public class Api {
     public Ecc getEcc() {return ecc; }
     public void setEcc(Ecc ecc) { this.ecc = ecc; } 
 
+    public TonelliShanks getTonelliShanks() {return tonelliShanks; }
+    public void setTonelliShanks(TonelliShanks tonelliShanks) {
+        this.tonelliShanks = tonelliShanks;
+    }
+
     public Api() {
         gson = new Gson();
+
         setEcc(new Ecc(this));
+        setTonelliShanks(new TonelliShanks(this));
     }
 
     public void listen() {
         port(getHerokuAssignedPort());
-        get("/", (req, res) -> "Hello :D");
+        get("/", (req, res) -> "Hello World!\nApi made by Gabriel.");
 
-        ecc.start();
+        getEcc().start();
+        getTonelliShanks().start();
     }
 
     // It's needed by Heroku
