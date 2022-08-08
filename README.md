@@ -6,9 +6,7 @@
  ### :bookmark: ECC's endpoints
  
 <details><summary>modp</summary><p>
- 
-It has the same parameters meaning from Ecc.modp(BigInteger n, BigInteger p1). [See java file.](https://github.com/carlosamcruz/BCAPP/blob/master/app/src/main/java/com/nibblelinx/BCAPP/Ecc.java#L47)
- 
+
 #### HTTP Request
 
 ```
@@ -26,8 +24,6 @@ GET https://bcapp-spark.herokuapp.com/modp/<n>/<p1>
 </details>
 
 <details><summary>inverse</summary><p>
- 
-It has the same parameters meaning from Ecc.inverse(BigInteger r, BigInteger p). [See java file.](https://github.com/carlosamcruz/BCAPP/blob/master/app/src/main/java/com/nibblelinx/BCAPP/Ecc.java#L54)
  
 #### HTTP Request
 
@@ -47,8 +43,6 @@ GET https://bcapp-spark.herokuapp.com/inverse/<r>/<p>
 
 <details><summary>doublep</summary><p>
  
-It has the same parameters meaning from Ecc.doublep(BigInteger x, BigInteger y). [See java file.](https://github.com/carlosamcruz/BCAPP/blob/master/app/src/main/java/com/nibblelinx/BCAPP/Ecc.java#L81)
- 
 #### HTTP Request
 
 ```
@@ -66,8 +60,6 @@ GET https://bcapp-spark.herokuapp.com/doublep/<x>/<y>
 </details>
 
 <details><summary>addp</summary><p>
- 
-It has the same parameters meaning from Ecc.addp(BigInteger x1, BigInteger y1, BigInteger x2, BigInteger y2). [See java file.](https://github.com/carlosamcruz/BCAPP/blob/master/app/src/main/java/com/nibblelinx/BCAPP/Ecc.java#L96)
  
 #### HTTP Request
 
@@ -88,8 +80,6 @@ GET https://bcapp-spark.herokuapp.com/addp/<x1>/<y1>/<x2>/<y2>
 </details>
 
 <details><summary>eccnp</summary><p>
- 
-It has the same parameters meaning from Ecc.eccnP(BigInteger n, BigInteger x, BigInteger y). [See java file.](https://github.com/carlosamcruz/BCAPP/blob/master/app/src/main/java/com/nibblelinx/BCAPP/Ecc.java#L128)
  
 #### HTTP Request
 
