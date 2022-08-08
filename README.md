@@ -190,10 +190,355 @@ GET https://bcapp-spark.herokuapp.com/ecdsabsv/<e>/<PVTKEY>/<HA4>
 
 - [ ] ECDSAVerify :warning:
 
+### :bookmark: Keygen's endpoints
+ 
+<details><summary>publicKey</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/public-key/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+<details><summary>stringToHEXString</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/string-to-hex-string/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+<details><summary>publicKeyHEX</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/public-key-hex/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+
+<details><summary>publicKeyCompSEC</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/public-key-comp-sec/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+
+<details><summary>publicKeyUncompSEC</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/public-key-uncomp-sec/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+<details><summary>pvtKey2</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/pvt-key-2/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+<details><summary>secKey</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/sec-key/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+<details><summary>secKeyHashToBigInt</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/sec-key-hash-to-big-int/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+<details><summary>HashToBigInt</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/hash-to-big-int/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+<details><summary>HashToBigIntWIF</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/hash-to-big-int-wif/<text>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  text |  String |
+
+</p></details>
+
+- [ ] encKeyToHexSTR :warning:
+
+<details><summary>encKeyHalfToHexSTR</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/enc-key-half-to-hex-str/<point>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  point | BigInteger |
+
+</p></details>
+
+<details><summary>encKeyHalfToByteSTR</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/enc-key-half-to-byte-str/<point>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  point | BigInteger |
+
+</p></details>
+
+<details><summary>pubKeyRev</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/pub-key-rev/<pubkey>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  pubkey | String |
+
+</p></details>
+
+</p></details>
+
+<details><summary>pubKeyCompSECRev</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/pub-key-comp-sec-rev/<pubkey>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  pubkey | String |
+
+</p></details>
+
+<details><summary>pubKeyUncompSECRev</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/pub-key-uncomp-sec-rev/<pubkey>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+|  pubkey | String |
+
+</p></details>
+
+<details><summary>bsvWallet</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/bsv-wallet/<pubkeyCOD>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| pubkeyCOD | String |
+
+</p></details>
+
+<details><summary>bsvWalletFull</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/bsv-wallet-full/<pubkeyCOD>/<compressed>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| pubkeyCOD | String |
+| compressed | Boolean |
+
+</p></details>
+
+</p></details>
+
+<details><summary>addRMD</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/addRMD/<hashKey>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| hashKey | String |
+
+</p></details>
+
+<details><summary>getAddressFromRMDHash</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/get-address-from-rmd-hash/<ripemdHash>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| ripemdHash | String |
+
+</p></details>
+
+<details><summary>bsvWalletRMD160</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/bsv-wallet-rmd160/<pubkeyCOD>/<compressed>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| pubkeyCOD | String |
+| compressed | Boolean |
+
+</p></details>
+
+<details><summary>bsvPKvsWALLET</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/bsv-pk-vs-wallet/<pubkeyCOD>/<walletRMD>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| pubkeyCOD | String |
+| walletRMD | String |
+
+</p></details>
+
+<details><summary>sigDERrev</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/sig-der-rev/<signECDSA>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| signECDSA | String |
+
+</p></details>
+
+- [ ] sigDER :warning:
+
 ## :memo: TODO
  - [x] Ecc
  - [x] TonelliShanks
  - [x] EcdsaSecretus
- - [ ] Keygen
+ - [x] Keygen
  - [ ] Ripemd160
  - [ ] SHA256

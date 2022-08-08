@@ -11,6 +11,7 @@ public class Api {
     private Ecc ecc;
     private TonelliShanks tonelliShanks;
     private EcdsaSecretus ecdsaSecretus;
+    private Keygen keygen;
 
     public Gson getGson() { return gson; }
     public void setGson(Gson gson) { this.gson = gson; }
@@ -28,12 +29,16 @@ public class Api {
         this.ecdsaSecretus = ecdsaSecretus;
     }
 
+    public Keygen getKeygen() {return keygen;}
+    public void setKeygen(Keygen keygen) {this.keygen = keygen;}
+
     public Api() {
         gson = new Gson();
 
         setEcc(new Ecc(this));
         setTonelliShanks(new TonelliShanks(this));
         setEcdsaSecretus(new EcdsaSecretus(this));
+        setKeygen(new Keygen(this));
     }
 
     public void listen() {
@@ -43,6 +48,7 @@ public class Api {
         getEcc().start();
         getTonelliShanks().start();
         getEcdsaSecretus().start();
+        getKeygen().start();
     }
 
     // It's needed by Heroku
