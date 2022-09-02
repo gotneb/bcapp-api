@@ -334,7 +334,20 @@ GET https://bcapp-spark.herokuapp.com/hash-to-big-int-wif/<text>
 
 </p></details>
 
-- [ ] encKeyToHexSTR :warning:
+<details><summary>encKeyToHexSTR</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/enc-key-to-hex-str/<point[0]>/<point[1]>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| point | BigInteger[] |
+
+</p></details>
 
 <details><summary>encKeyHalfToHexSTR</summary><p>
  
@@ -523,7 +536,20 @@ GET https://bcapp-spark.herokuapp.com/sig-der-rev/<signECDSA>
 
 </p></details>
 
-- [ ] sigDER :warning:
+<details><summary>sigDER</summary><p>
+ 
+#### HTTP Request
+
+```
+GET https://bcapp-spark.herokuapp.com/sig-der/<signECDSA[0]>/<signECDSA[1]>
+```
+ #### URL Parameters
+
+| Parameter  |  Description  |
+| --- | --- |
+| signECDSA | BigInteger[] |
+
+</p></details>
 
 ## :memo: TODO
  - [x] Ecc
