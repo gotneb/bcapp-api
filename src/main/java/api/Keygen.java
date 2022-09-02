@@ -82,7 +82,23 @@ public class Keygen {
             return toJson(lib.HashToBigIntWIF(text));
         });
 
-        // TODO: endopoint String encKeyToHexSTR (BigInteger [] point)
+        get("/enc-key-to-hex-str/:point", (req, res) -> {
+            /*
+             * Point is something like this: `"1248", "4545", "45454", ..., "48787"`
+             */
+            res.type("application/json");
+            // Format input 
+            String  param = req.params("point");
+            param = param.replaceAll("\"", "");
+            param = param.replaceAll(" ", "");
+            String[] returned = param.split(",");
+            // Transform to big integer
+            BigInteger[] point = new BigInteger[2];
+            for (int i = 0; i < returned.length; i++) {
+                point[i] = new BigInteger(returned[i]);
+            } 
+            return toJson(lib.encKeyToHexSTR(point));
+        });
 
         get("/enc-key-half-to-hex-str/:point", (req, res) -> {
             res.type("application/json");
@@ -159,6 +175,22 @@ public class Keygen {
             return toJson(lib.sigDERrev(signECDSA));
         });
 
-        // TODO: endpoint String sigDER (BigInteger[] signECDSA)
+        get("/sig-der/:signECDSA", (req, res) -> {
+            /*
+             * Request should be like: `"4578787, "545754575"`
+             */
+            res.type("application/json");
+            // Format input 
+            String  param = req.params("signECDSA");
+            param = param.replaceAll("\"", "");
+            param = param.replaceAll(" ", "");
+            String[] returned = param.split(",");
+            // Transform to big integer
+            BigInteger[] signECDSA = new BigInteger[2];
+            for (int i = 0; i < returned.length; i++) {
+                signECDSA[i] = new BigInteger(returned[i]);
+            } 
+            return toJson(lib.sigDER(signECDSA));
+        });
     }
 }
