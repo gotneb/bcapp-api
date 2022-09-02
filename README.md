@@ -339,7 +339,7 @@ GET https://bcapp-spark.herokuapp.com/hash-to-big-int-wif/<text>
 #### HTTP Request
 
 ```
-GET https://bcapp-spark.herokuapp.com/enc-key-to-hex-str/<point[0]>/<point[1]>
+GET https://bcapp-spark.herokuapp.com/enc-key-to-hex-str/"<point[0]>", "<point[1]>"
 ```
  #### URL Parameters
 
@@ -541,7 +541,7 @@ GET https://bcapp-spark.herokuapp.com/sig-der-rev/<signECDSA>
 #### HTTP Request
 
 ```
-GET https://bcapp-spark.herokuapp.com/sig-der/<signECDSA[0]>/<signECDSA[1]>
+GET https://bcapp-spark.herokuapp.com/sig-der/"<signECDSA[0]>", "<signECDSA[1]>"
 ```
  #### URL Parameters
 
